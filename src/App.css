@@ -1,13 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  
+  background: linear-gradient(
+    90deg,
+    rgb(78, 63, 155) 0%,
+    rgb(43, 45, 63) 100%
+  );
+}
+
 .Todo-list-container{
   margin:5rem ;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 80rem;
+  justify-content: start;
   border: 1px solid black;
   min-height: 50rem;
-  background-color: skyblue;
+  background-color: rgb(235, 229, 229);
+  flex-direction: column;
+  width: 520px;
+  background: #151b2b;
+  text-align: center;
+  margin: 128px auto;
   border-radius: 1rem;
+  padding-bottom: 32px;
+  padding-top: 5px;
+
+  
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
 }
 
 .todo-form{
@@ -16,33 +46,47 @@
   width: 100%;
   margin-top: 3rem;
   font-size: 2rem;
-  gap: 2rem;
+  margin-bottom: 32px;
+  margin-left: 10px;
 }
 
 .todo-form input{
-  border: 1px solid black;
+ 
   font-size: 2rem;
-  padding: 1rem;
   margin: 1rem;
-  border-radius: 1rem;
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 330px;
+  background: transparent;
+  color: #fff;
 }
 
-
-
 .todo-form button{
-  border: 1px solid black ;
-  border-radius: 1rem;
-  background-color: white;
-  padding: 1rem;
+ 
   cursor: pointer;
-  font-weight: 600;
-  font-size: 2.5rem;
+  font-weight: 300;
+  font-size: 2rem;
+  height: 7.5rem;
+  padding: 20px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+
 }
 
 .todo-form button:hover{
-  background-color: black;
   color: white;
   font-weight: 600;
+
+  
 }
 
 .task-div{
@@ -62,9 +106,10 @@
 
 .icons{
   font-size: 2.5rem;
-  gap: 3rem;
+  gap: 7rem;
   font-size: 2.5rem;
   cursor: pointer;
+ 
 }
 
 .complete{
